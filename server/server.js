@@ -94,7 +94,9 @@ async function addGoodsInCart(_, {goods}) {
 
 const server = new ApolloServer({
     typeDefs,
-    resolvers
+    resolvers,
+    playground: true,
+    introspection: true
 });
 
 server.applyMiddleware({app, path: '/graphql'});
@@ -114,5 +116,3 @@ app.use('/', express.static('public'));
         }
     }
 )()
-
-// AsDf1234
