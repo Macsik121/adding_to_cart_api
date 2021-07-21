@@ -35,5 +35,3 @@ db.goods.insertMany(goods);
 db.goodsInCart.drop();
 db.goodsInCart.insertOne({init: ''});
 db.goodsInCart.deleteOne({init: ''});
-db.amountGoodsInCart.drop();
-db.amountGoodsInCart.insertOne({_id: 'amountOfGoodsInCart', current: 0});
